@@ -38,7 +38,37 @@ itself:
 - **Character Features**
 <!-- insert a screenshot here -->
 
+### Overview
+<!-- shiny dashboard https://rstudio.github.io/shinydashboard/structure.html#boxes -->
+<!-- controls to use https://github.com/dreamRs/shinyWidgets -->
+<!-- https://github.com/dcomtois/summarytools -->
+<!-- https://boxuancui.github.io/DataExplorer/articles/dataexplorer-intro.html -->
+<!-- other charts to use https://www.r-graph-gallery.com/ -->
+- Features and their datatypes:
+  - Features Diagram <!-- https://christophergandrud.github.io/networkD3/ -->
+  <!-- https://www.r-graph-gallery.com/339-circular-dendrogram-with-ggraph.html -->
+  - Features statistics overview
+- Tibble statistics:
+  - Number of observations
+  - Number of categorical features
+  - Number of numerical features
+  - Number of datetime features
+  - Number of character features
+- Charts:
+  - Missing data plots
+  
+### Categorical Features
+
+- Charts:
+  - Levels Frequency
+  - Cross Tabulations (with Chi-square)
+
+### Numerical Features:
+
+- Charts:
+  - Descriptive Statistics
 ## Installation
+
 
 You can install the released version of tibbleexplorer from 
 [CRAN](https://CRAN.R-project.org) with:
