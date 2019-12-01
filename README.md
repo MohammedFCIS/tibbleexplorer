@@ -7,7 +7,20 @@
 
 <!-- badges: end -->
 
-The goal of tibbleexplorer is to …
+## Overview
+
+The goal of tibbleexplorer is to provide an attractive and easy to use
+simple shiny UI for `R` tibbles fields exploration.
+
+The application consists of the following modules that gives statistical
+information about each type category of features and an overview of the
+tibble itself:
+
+  - **Overview** <!-- insert a screenshot here -->
+  - **Categorical Features** <!-- insert a screenshot here -->
+  - **Numerical Features** <!-- insert a screenshot here -->
+  - **DateTime Features** <!-- insert a screenshot here -->
+  - **Character Features** <!-- insert a screenshot here -->
 
 ## Installation
 
