@@ -21,3 +21,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/MohammedFCIS/tibbleexplorer
+BugReports: https://github.com/MohammedFCIS/tibbleexplorer/issues
