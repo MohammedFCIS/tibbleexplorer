@@ -13,7 +13,11 @@ Imports:
     attempt,
     DT,
     glue,
-    htmltools
+    htmltools,
+    thinkr
 RoxygenNote: 6.1.0
 Suggests: 
-    testthat
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
