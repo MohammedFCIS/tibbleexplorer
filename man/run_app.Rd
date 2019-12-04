@@ -6,6 +6,9 @@
 \usage{
 run_app(...)
 }
+\arguments{
+\item{...}{arbitry arguments}
+}
 \description{
 Run the Shiny Application
 }
