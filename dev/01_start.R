@@ -10,12 +10,15 @@
 
 golem::fill_desc(
   pkg_name = "tibbleexplorer", # The Name of the package containing the App 
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App 
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST",  # Your Last Name
-  author_email = "AUTHOR@MAIL.COM",      # Your Email
-  repo_url = NULL # The (optional) URL of the GitHub Repo
+  pkg_title = "Tibble Explorer", # The Title of the package containing the App 
+  # The Description of the package containing the App
+  pkg_description = "Shiny application to give an overview of given R tibble 
+  and explore its features in simple and attractive manner.",
+  author_first_name = "Mohammed", # Your First Name
+  author_last_name = "Ali",  # Your Last Name
+  author_email = "moh_fcis@yahoo.com",      # Your Email
+  # The (optional) URL of the GitHub Repo
+  repo_url = "https://github.com/MohammedFCIS/tibbleexplorer" 
 )     
 
 ## Use this desc to set {golem} options
@@ -26,7 +29,7 @@ golem::set_golem_options()
 ## 
 ## If you want to use the MIT licence, README, code of conduct, lifecycle badge, and news
 
-usethis::use_mit_license( name = "Golem User" )  # You can set another licence here
+usethis::use_mit_license( name = "Mohammed Ali" )  # You can set another licence here
 usethis::use_readme_rmd( open = FALSE )
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )

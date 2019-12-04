@@ -1,8 +1,9 @@
 Package: tibbleexplorer
-Title: PKG_TITLE
+Title: Tibble Explorer
 Version: 0.0.0.9000
-Authors@R: person('AUTHOR_FIRST', 'AUTHOR_LAST', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
-Description: PKG_DESC.
+Authors@R: person('Mohammed', 'Ali', email = 'moh_fcis@yahoo.com', role = c('cre', 'aut'))
+Description: Shiny application to give an overview of given R tibble 
+  and explore its features in simple and attractive manner.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
