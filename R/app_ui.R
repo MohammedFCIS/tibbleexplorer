@@ -1,12 +1,10 @@
 #' @import shiny
+#' @import shinydashboard
 app_ui <- function() {
-  tagList(
-    # Leave this function for adding external resources
-    golem_add_external_resources(),
-    # List the first level UI elements here 
-    fluidPage(
-      h1("tibbleexplorer")
-    )
+  dashboardPage(
+    dashboardHeader(),
+    dashboardSidebar(),
+    dashboardBody()
   )
 }
 
