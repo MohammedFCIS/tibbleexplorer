@@ -19,7 +19,8 @@ tibble_overview_module_ui <- function(id){
   tagList(
     # Boxes need to be put in a row (or column)
     fluidRow(
-      valueBoxOutput(ns("observations_number"))
+      valueBoxOutput(ns("observations_number")),
+      valueBoxOutput(ns("features_number"))
     )
   )
 }
@@ -37,6 +38,13 @@ tibble_overview_server <- function(input, output, session){
       nrow(mytibble),
       "Observations",
       icon("bars")
+    )
+  )
+  output$features_number <- renderValueBox(
+    valueBox(
+      ncol(mytibble),
+      "Features",
+      icon("columns")
     )
   )
 }

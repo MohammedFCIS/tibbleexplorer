@@ -48,6 +48,7 @@ tibble itself:
       - Features statistics overview
   - Tibble statistics:
       - Number of observations
+      - Number of features
       - Number of categorical features
       - Number of numerical features
       - Number of datetime features
