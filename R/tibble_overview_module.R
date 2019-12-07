@@ -13,16 +13,13 @@
 #' @keywords internal
 #' @export 
 #' @importFrom shiny NS tagList 
+#' @importFrom golem get_golem_options
 tibble_overview_module_ui <- function(id){
   ns <- NS(id)
   tagList(
     # Boxes need to be put in a row (or column)
     fluidRow(
-      box(plotOutput(ns("plot1"), height = 250)),
-      box(
-        title = "Controls",
-        sliderInput(ns("slider"), "Number of observations:", 1, 100, 50)
-      )
+      valueBoxOutput(ns("observations_number"))
     )
   )
 }
@@ -34,11 +31,12 @@ tibble_overview_module_ui <- function(id){
 #' @keywords internal
     
 tibble_overview_server <- function(input, output, session){
-  set.seed(122)
-  histdata <- rnorm(500)
-  
-  output$plot1 <- renderPlot({
-    data <- histdata[seq_len(input$slider)]
-    hist(data)
-  })
+  mytibble <- get_golem_options("mytibble")
+  output$observations_number <- renderValueBox(
+    valueBox(
+      nrow(mytibble),
+      "Observations",
+      icon("bars")
+    )
+  )
 }
