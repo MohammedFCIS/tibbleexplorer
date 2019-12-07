@@ -3,7 +3,17 @@
 app_ui <- function() {
   dashboardPage(
     dashboardHeader(title = "Tibble Explorer"),
-    dashboardSidebar(),
+    dashboardSidebar(sidebarMenu(
+      menuItem("Overview", tabName = "overview", icon = icon("dashboard")),
+      menuItem("Categorical Features", tabName = "categorical",
+               icon = icon("chart-bar")),
+      menuItem("Numerical Features", tabName = "numerical",
+               icon = icon("chart-area")),
+      menuItem("DateTime Features", tabName = "datetime",
+               icon = icon("hourglass-end")),
+      menuItem("Character Features", tabName = "character",
+               icon = icon("amilia"))
+    )),
     dashboardBody(
       tibble_overview_module_ui("myoverview")
     )
