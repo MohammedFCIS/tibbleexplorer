@@ -15,7 +15,23 @@ app_ui <- function() {
                icon = icon("amilia"))
     )),
     dashboardBody(
-      tibble_overview_module_ui("myoverview")
+      tabItems(
+        # overview tab content
+        tabItem(tabName = "overview",
+                tibble_overview_module_ui("myoverview")),
+        # categorical tab content
+        tabItem(tabName = "categorical",
+                h2("Categorical tab content")),
+        # numerical tab content
+        tabItem(tabName = "numerical",
+                h2("Numerical tab content")),
+        # categorical tab content
+        tabItem(tabName = "datetime",
+                h2("DateTime tab content")),
+        # categorical tab content
+        tabItem(tabName = "character",
+                h2("Character tab content"))
+        )
     )
   )
 }
