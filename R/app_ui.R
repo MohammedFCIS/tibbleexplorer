@@ -2,9 +2,11 @@
 #' @import shinydashboard
 app_ui <- function() {
   dashboardPage(
-    dashboardHeader(),
+    dashboardHeader(title = "Tibble Explorer"),
     dashboardSidebar(),
-    dashboardBody()
+    dashboardBody(
+      tibble_overview_module_ui("myoverview")
+    )
   )
 }
 

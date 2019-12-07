@@ -4,7 +4,7 @@ library(golem)
 
 test_that("app ui", {
   ui <- app_ui()
-  expect_shinytaglist(ui)
+  expect_shinytag(ui)
 })
 
 test_that("app server", {
