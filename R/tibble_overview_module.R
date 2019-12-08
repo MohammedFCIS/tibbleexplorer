@@ -35,7 +35,7 @@ tibble_overview_module_ui <- function(id){
 #' @keywords internal
 #' @importFrom purrr map_df
 #' @importFrom  stringr str_to_sentence
-#' @import ggplot2, plotly, dplyr
+#' @import ggplot2 plotly dplyr
 #'   
 tibble_overview_server <- function(input, output, session){
   mytibble <- get_golem_options("mytibble")

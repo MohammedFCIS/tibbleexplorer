@@ -8,20 +8,25 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
+    attempt,
+    dplyr,
+    DT,
+    ggplot2,
+    glue,
+    golem,
+    htmltools,
+    plotly,
+    processx,
+    purrr,
     shiny,
     shinydashboard,
-    golem,
-    processx,
-    attempt,
-    DT,
-    glue,
-    htmltools,
+    stringr, 
     thinkr
 RoxygenNote: 6.1.1
 Suggests: 
-    testthat (>= 2.1.0),
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
 URL: https://github.com/MohammedFCIS/tibbleexplorer
 BugReports: https://github.com/MohammedFCIS/tibbleexplorer/issues
