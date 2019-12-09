@@ -15,7 +15,6 @@ Imports:
     glue,
     golem,
     htmltools,
-    plotly,
     processx,
     purrr,
     shiny,
