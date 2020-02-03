@@ -35,11 +35,12 @@ tibble_overview_module_ui <- function(id){
 #' @keywords internal
 #' @importFrom purrr map_df
 #' @importFrom  stringr str_to_sentence
+#' @importFrom  tidyr gather
 #' @import ggplot2 dplyr
 #'   
 tibble_overview_server <- function(input, output, session){
   mytibble <- get_golem_options("mytibble")
-  tibble_classes <- map(mytibble, class) %>%
+  tibble_classes <- map_df(mytibble, class) %>%
     as_tibble() %>% 
     filter(row_number() == n()) %>% 
     gather("Feature", "Class") %>%
