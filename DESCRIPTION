@@ -20,7 +20,8 @@ Imports:
     shiny,
     shinydashboard,
     stringr, 
-    thinkr
+    thinkr,
+    tidyr
 RoxygenNote: 7.0.2
 Suggests: 
     knitr,
