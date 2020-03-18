@@ -26,8 +26,7 @@ tibble itself:
   - **Categorical Features** <!-- insert a screenshot here -->
   - **Numerical Features** <!-- insert a screenshot here -->
   - **DateTime Features** <!-- insert a screenshot here -->
-  - **Character Features**
-<!-- insert a screenshot here -->
+  - **Character Features** <!-- insert a screenshot here -->
 
 ### Overview
 
@@ -86,6 +85,6 @@ devtools::install_github("MohammedFCIS/tibbleexplorer")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(tibbleexplorer)
-## basic example code
+library(MASS)
+tibbleexplorer::run_app(birthwt)
 ```
