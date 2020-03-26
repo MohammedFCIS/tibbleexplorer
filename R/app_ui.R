@@ -1,5 +1,6 @@
 #' @import shiny
 #' @import shinydashboard
+#' @import dashboardthemes
 app_ui <- function() {
   dashboardPage(
     dashboardHeader(title = "Tibble Explorer"),
@@ -15,6 +16,10 @@ app_ui <- function() {
                icon = icon("amilia"))
     )),
     dashboardBody(
+      ### changing theme
+      shinyDashboardThemes(
+        theme = "blue_gradient"
+      ),
       tabItems(
         # overview tab content
         tabItem(tabName = "overview",
