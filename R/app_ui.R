@@ -3,7 +3,7 @@
 #' @import dashboardthemes
 app_ui <- function() {
   dashboardPage(
-    dashboardHeader(title = "Tibble Explorer"),
+    dashboardHeader(title = logo_blue_gradient),
     dashboardSidebar(sidebarMenu(
       menuItem("Overview", tabName = "overview", icon = icon("dashboard")),
       menuItem("Categorical Features", tabName = "categorical",
@@ -57,3 +57,17 @@ golem_add_external_resources <- function(){
     #tags$link(rel="stylesheet", type="text/css", href="www/custom.css")
   )
 }
+
+### creating custom logo object
+logo_blue_gradient <- shinyDashboardLogoDIY(
+  
+  boldText = "MA"
+  ,mainText = "Tibble Explorer"
+  ,textSize = 16
+  ,badgeText = "Alpha"
+  ,badgeTextColor = "white"
+  ,badgeTextSize = 2
+  ,badgeBackColor = "#40E0D0"
+  ,badgeBorderRadius = 3
+  
+)
