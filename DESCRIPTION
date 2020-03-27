@@ -9,6 +9,7 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     attempt,
+    dashboardtheme,
     dplyr,
     DT,
     ggplot2,
