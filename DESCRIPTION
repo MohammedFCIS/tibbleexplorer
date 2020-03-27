@@ -22,6 +22,7 @@ Imports:
     stringr, 
     thinkr,
     tidyr
+Remotes: nik01010/dashboardthemes
 RoxygenNote: 7.0.2
 Suggests: 
     knitr,
